@@ -1,0 +1,1512 @@
+TCOS Version 7.0 Build - 8985 - 20-10-2011
+Fixed:          Login username entries can contain space characters.
+
+TCOS Version 7.0 Build - 8944 - 16-09-2011
+
+Updated:        Support for VIA VX-900 chipset. Current support is limited to the use of the VESA driver only.
+Updated:        The smart card daemon was updated to version 1.7.4.
+
+TCOS Version 7.0 Build - 8760 - 28-06-2011
+
+Fixed:          Manual network configuration now works as expected when in managed mode and no IP could be acquired. 
+
+TCOS Version 7.0 Build - 8750 - 23-06-2011
+
+Fixed:          Characters from the full ASCII set can now be used inside user credentials when connecting to Citrix Full Desktop components.
+Fixed:          Upgraded xscreensaver to version 5.14 which allows users to type in ASCII extended characters and unlock screensaver sessions that contain such characters.
+Fixed:          A single RDP component is now successfully launched if the client is configured with a screensaver.
+
+TCOS Version 7.0 Build - 8741 - 09-06-2011
+Fixed:          10Zig 562X Profile : Uses XServer 7.4 (1.6.3) with Kernel Mode Support disabled. Xserver 2D driver set to "intel". Fallback driver set to "vesa".
+
+TCOS Version 7.0 Build - 8711 - 20-05-2011
+Fixed:          10Zig 562X profile uses Xserver 6.9. DVI and VGA monitor interfaces can now be used with this client.
+
+TCOS Version 7.0 Build - 8692 - 16-05-2011
+Updated:        User can now pre-define the Vmware View Client connection method to use.
+Updated:        Sun Java upgraded to Version 1.6.0.25.
+Fixed:          Screensaver now launching properly when the thin client is in Greeter.
+Fixed:          Decoding credentials before launching Citrix client in single component mode operation.
+Fixed:          Local keyboard layout fixes: US-International, Dutch, Latin Amerian, Italian, United Kingdom, French, Spanish, German, Swiss French,
+                Swiss German, Belgian - Comma, Belgian - Period, and Canadian French.
+Fixed:          VDS 2XOS USB-pen drive deployment. The 2XOS Greeter must load with "Local" and "VDS" login options.
+Fixed:          Forwarding domain string when launching VMWare View Client.
+
+TCOS Version 7.0 Build - 8650 - 10-05-2011
+New Feature:    User can now pre-define the Vmware View Client connection method to use, i.e. PCOIP or RDP.
+Updated:        Support for VIA Video chipset 1106/5122 - VX-855.
+Updated:        2X Client updated to Version 9.0 (build 1083) r14818.
+
+TCOS Version 7.0 Build - 8579 - 21-04-2011
+New Feature:    Vendor profile for the 10ZiG 542XA thin client.
+New Feature:    Credential encoding now enables wider selection of characters to be used in user name and password fields.
+New Feature:    Vendor profile for the Terra Nettop 3000 thin client.
+New Feature:    Vendor profiles for the Stone Thin Client, Stone Netbook, and the Stone Laptop hardware.
+Updated:        New VMware View Client - Version 4.6. Updated versions for the client, USB-redirection and PCoIP modules.
+Updated:        Opera upgraded to Version 11.10.
+Updated:        Adobe Flash upgraded to version 10.2.159.1.
+Updated:        2X Client: Bumped 2X Client binary to Version 9.0 (build 1077) r14818.
+Updated:        Wireless r8192se drivers updated to Version 0019.1207.2010.
+Fixed:          Synchronised the following keyboard layouts: ch, jp, ca_enhanced, be and variants, de, es, fr, gb, it, latin, nl, and us_intl between TCOS versions.
+Fixed:          Font smoothing when connecting to 2008/Vista Servers such as Pebbles.
+Fixed:          Wireless network cards can be configured using the System Preferences tool.
+Fixed:          Launching of a single published RDP component having a single desktop application is now performed correctly.
+Fixed:          The System Preferences tool is now displaying the appropriate removable devices when creating recovery disks.
+Fixed:          Starting the 2X volume mixer for the lunithin 100, riecom ib2710, riecom ib2710_c, and riecom ib3610 profiles.
+Fixed:          Keyboard navigation works properly in the System Preferences tool.
+Fixed:          Added VNC and VMWare View filtering from the Terra All In One 1900 thin client.
+Fixed:          Correctly displaying the ThinClientServer farm server list in the System Preferences tool.
+Fixed:          Blank screen when launching installer.
+Fixed:          Display configuration setup over legacy XServer versions when EDID capture is not possible.
+Fixed:          SSL connectivity when using published RDP components. Also, support added for domain strings having '/' character.
+Fixed:          Updating from 2XOS Version 6.3 to 7.0.
+Fixed:          Credentials pop-up window now shown when launching a non-configured VNC connection.
+Known Issue:    Citrix full desktop password character set still limited to the first 128 characters in the ASCII set.
+
+TCOS Version 7.0 Build - 8235 - 18-03-2011
+New Feature:    The "Remember last user name" feature has been implemented in the TCOS login. This feature displays/hides the last logged in user name.
+New Feature:    The "Connect to console" feature has been implemented when connecting to a full desktop RDP connection.
+Updated:        Updated OS to 2.6.34.8 Long Term Support (LTS) kernel.
+Updated:        Opera brower updated to Version 11.01.
+Updated:        Adobe Flash updated to Version 10.2.r152.
+Updated:        Java updated to Version 1.6.0.24.
+Updated:        2X Client updated to Version 9.0 (build 1062) r14514.
+Updated:        Updated timezone information to latest 2011b version.
+Improved:       The sound subsystem has been improved to support low-spec hardware and better sound quality on high end hardware.
+Improved:       USB booting on XThin V16 thin client.
+Fixed:          Serial port reader Java applet works in all OS modes. (Standalone, PXE, and HDD.)
+Fixed:          The sound subsystem is now available all the time even when not required.
+Fixed:          Authenticating issue on TCOS when screensaver is on and one RDP component is configured.
+Fixed:          Lauching Opera in full available mode.
+Fixed:          Disconnect/reconnect issues over latest 2X Client have been rectified.
+Fixed:          Support for NetLink BCM57780 14e4:1692 Gigabit Ethernet PCIe network card.
+Fixed:          AC 97 fix added to enable headphone and master volume controls to be bound together when required.
+Fixed:          Blanking of screen when installer is left idle.
+Fixed:          Thin Client VNC server can now be accessed through an web browser by pointing the browser to http://<ip>:5800/.
+Known Issue:    Wireless cannot be configured.
+
+TCOS Version 7.0 Build - 7944 - 19-12-2010
+New Feature: Updated OS to 2.6.34.6 kernel.
+New Feature: Splash screen now includes messages.
+New Feature: Multi network card support.
+New Feature: Support for USB 3 hubs and devices.
+New Feature: Kernel Mode Setting (KMS) support.
+New Feature: New Xserver implemented: Protocol 7.5, core 1.7.6. Improved support for Intel, Nvidia, ATI chipsets.
+New Feature: Dynamic video display testing during user session - reboot not required in many cases.
+New Feature: New TCOS installer implemented. The installer installs the TCOS to a disk-wide partition prompting the 
+             user to overwrite the contents of the destination disk.
+Improved: USB device detection and configuration.
+Improved: Disk support now using proper PATA/SATA drivers.  Including generic drivers for compatibility.
+Improved: Desktop responsiveness has been improved by using cgroups sub system.
+Improved: Major overhaul of session scripts, including login credential handling when executing connectivity components:
+          - Support included for Base-64 credential decoding.
+          - Error message handling re-written.
+Improved: Major overhaul of display setup, test and support scripts.
+Improved: Disconnect/reconnect session recording utility updated.
+Fixed: Support for Broadcom device 14e4:1692 Tigon gigabyte nic card.
+Fixed: Launching X server with nologo option.
+
+ThinClientServer Version 6.3 Build 8708 - 20-05-2011
+TCOS
+Updated    : User can now pre-define the Vmware View Client connection method to use, i.e. PCOIP or RDP.
+Fixed      : Users can now gracefully upgrade old versions of 2XOS Version 6.3.
+
+ThinClientServer Version 6.3 Build 8692 - 13-05-2011
+TCOS
+Fixed      : Clients can now upgrade to 2XOS version 7.0.
+Updated    : 2X Client updated to Version 9.0 (build 1083) r14818.
+
+TCS
+New Feature: Vmware View Client connection method (PCoIP or RDP) can be selected from within TCS console.
+
+ThinClientServer Version 6.3 Build 8235 - 08-03-2011
+TCOS
+Fixed: Updated timezone information to latest 2011b version.
+Fixed: Disconnect/reconnect issues over latest 2X Client have been rectified.
+Fixed: AC 97 fix added to enable headphone and master volume controls to be bound together when required.
+Fixed: Correctly saving in boot options when installing the TCOS to a USB pen-drive.
+Update: 2X Client updated to Version 9.0 (build 1062) r14514.
+
+ThinClientServer Version 6.3 Build 8131 - 22-02-2011
+TCOS
+Updated    : 2X client updated to Version 9.0 (build 1053) r14383
+Improved   : Sound system package is now available at all times.
+New Feature: Depending on management console setup, the previously-used username string inside the 2X Login screen can be shown or else hidden.
+Fixed      : Updated timezone information to latest version.
+Fixed      : When shadowing has been enabled on a TCOS client, it is now possible to connect and open a VNC connection through an Internet Browser.
+
+ThinClientServer Version 6.3 Build 8131 - 22-02-2011
+TCS
+Fixed      : Correctly filtering protocol list and type arrays.
+
+ThincClientServer Version 6.3 Build - 7999 - 18-01-2011
+TCOS
+Fixed:    Barcode reader Java applet working in all modes. Applet enabled in Standalone, PXE, and HDD managed modes.
+
+ThinClientServer Version 6.3 Build 7936 - 26-11-2010
+TCOS
+New Feature: Added support for ACS Smart Card reader ACR38
+Fixed: Fix switching between windows when dialog is open from taskbar
+
+ThinClientServer Version 6.3 Build 7902 - 01-11-2010
+TCOS
+Fixed: Fix issue with tooltips when using RDP published applications
+Fixed: Add trusted bundle of certificates for 2X SSL connections
+
+ThinClientServer Version 6.3 Build 7898 - 27-10-2010
+TCOS
+Fixed: Fix parsing of long list of shortcuts when refreshing shortcuts
+Fixed: Fix issue with Office 2003 menus stealing focus when using RDP published applications
+Improved: Improved delay when playing short sounds when using RDP sound redirection
+
+ThinClientServer Version 6.3 Build 7882 - 07-10-2010
+TCOS
+New Feature: Add support for PCOIP in Vmware View Client
+Fixed: Fix enabling of sound when joined with VDS
+Fixed: Fix activating screen saver during login as well
+Fixed: Fix booting when TCS is set using the DNS option
+Fixed: Improve issues with RDP keyboard focus
+Fixed: Fixes issues with RDP timezone redirection
+
+ThinClientServer Version 6.3 Build 7868 - 29-09-2010
+TCOS
+Fixed: Fixed reconnect feature when disconnecting from TS session
+Fixed: Fixed missing driver for EZ100 smart card reader
+Fixed: Increased timeout to always wait for 30 seconds for a removable CD to appear
+Fixed: Fixed location of TCS via DNS method
+
+ThinClientServer Version 6.3 Build 7842 - 10-09-2010
+TCOS
+Fixed: Logging in locally after joining to VDS and logging on to VDS now works again 
+
+ThinClientServer Version 6.3 Build 7836 - 03-09-2010
+TCOS
+Fixed: Enable USB forwarding of devices plugged in before launching the VMWare View client (HGX-619685)
+Fixed: If we are in VDS mode default to enable redirection devices
+Fixed: Screensaver was not kicking in when TCOS was left at the login prompt
+Fixed: 40bit RDP encryption support when connecting to Windows 2000 server
+Fixed: Mouse button event synchronization, since hardvare/driver can generate extra events
+Fixed: Fixed changing Mouse nad Keyboard without changing resolution. Was not catering for mouse protocols with similar names
+
+ThinClientServer Version 6.3 Build 7801 - 19-08-2010
+TCOS
+Fixed: Windows XP clipboard redirection when using RDP desktops
+Fixed: Setting of mouse driver and keyboard driver when no resolution change was done
+
+ThinClientServer Version 6.3 Build 7791 - 17-08-2010
+TCOS
+Fixed: Issue with scrolling of PDF sending too many scrolling events at once
+Fixed: Issue with scrolling in Excel scrolling by 6 rows instead of 3
+
+ThinClientServer Version 6.3 Build 7775 - 06-08-2010
+TCS
+Fixed: Closing network sockets to prevent Error 10055 during upgrade/repair of installation on Windows Server 2008 R2 64 bit
+
+TCOS
+New feature: Enable serial support in JAVA
+New feature: Enable JAVA when using a standalone version which supports JAVA
+Fixed: Fix Java support when using r2 since it crashes the JVM and the browser.
+Fixed: Focus/raise issues with published apps
+Fixed: Disable Skype and Adobe PDF from generic.r0 and ccos.r0 as unsupported
+Fixed: Import of security settings from standalone backup
+
+ThinClientServer Version 6.3 Build 7747 - 22-07-2010
+TCOS Changelog
+Fixed: Show warning message that upgrade is in progress while loading desktop components during an upgrade
+Fixed: Replaced VMware View icons used on desktop and program shortcuts
+
+ThinClientServer Version 6.3 Build 7670 - 02-07-2010
+TCOS Changelog
+New feature: Add support for sourcing overrides from a file within the ISO, USB or HD when loading the initial defaults for the first time
+New feature: Initial support for Nvidia ION chipset. Updated Nvidia open-source driver to version 2.1.17 which includes partial support for ION chipset
+
+ThinClientServer Version 6.3 Build 7658 - 23-06-2010
+TCOS Changelog
+Fixed: Fixed interrupted building of OEM profiles due to typo
+
+ThinClientServer Version 6.3 Build 7654 - 22-06-2010
+TCOS Changelog
+Fixed: Do not overwrite browser settings when running in standalone mode
+Fixed. Restore from minimize state
+Fixed. VB application not visible in taskbar
+Fixed. Alt+tab leaves Alt pressed on TS
+Fixed. Switching between worksheets in Excel
+
+ThinClientServer Version 6.3 Build 7638 - 16-06-2010
+TCOS Changelog
+Fixed: compatibility issue with VDS server build 873 and higher
+
+ThinClientServer Version 6.3 Build 7632 - 10-06-2010
+TCOS Changelog
+Fixed: Wait for network if we need to check for automatic updates in case of DHCP
+Fixed: Do not check for remote XML when automatic updates is disabled
+Fixed: When only Citrix applications/desktops are published they do not start when sound redirection is set to off (default)
+Fixed: Do not source sound related script files if sound is disabled
+
+ThinClientServer Version 6.3 Build 7625 - 04-06-2010
+TCOS Changelog
+New Feature: Updated 2.6.28 kernel
+Fixed: Fix setting desktop background text for username, ip and hostname
+Fixed: Fix issue when changing ownership of files containing . and : in the username
+Fixed: Fix printer redirection support with VMware View client
+Fixed: Large licence from TS does not cause crash when launching the rdp client 
+Fixed: Moved the compat-wireless compiled modules under the updates directory and not in the kernel default stack.
+Fixed: The wdmLogin binary was not updated for R0.  This was causing an issue when trying to log in as the method field was empty.
+Fixed: Updated profiles and adding the RD_SOUND_TUXMIXER tag to enable/disable the tuxvolume mixer binary
+Fixed: Added the RD_SOUND_TUXMIXER variable to enable/disable the tuxvolume binary based on the OEM profileFixed: 10zig_562X wireless support
+Fixed: Enabled support for the ipw2100 and ipw2200 modules using the in kernel version.
+Fixed: Authentication with VDS 8.1.856 and higher when TCOS is joined with VDS
+Fixed: version of CCOS splash screen while booting to v6.3
+
+ThinClientServer Version 6.3 Build 7567 - 23-04-2010
+TCS Changelog
+Fixed: Fixed problem of 'duplicate' concatinated hostname of client.
+
+TCOS Changelog
+Fixed: Fixes issue with japanese 8.1.858
+Fixed: Now supporting reconnect of published source connectivity-via-SSL
+Fixed: Update of profiles with the new documentation and setting of the KERNEL_VGA_OPTION option.
+Fixed: Added udev rule to rename wireless eth ipw2100 interface to wlan.
+
+ThinClientServer Version 6.3 Build 7541 - 23-04-2010
+TCOS Changelog
+Enabling usb2 support by default
+Further improvements to avoid sporadic crash when booting in standalone mode or autologin mode
+Added support for ATI Radeon Mobility X1400 when using r2
+Added support for Nvidia 6150LE when using r3
+Added special setup code for rt2500 and recent intel cards
+Fixed issue when initializing an ipw2200 network card
+Added delay when initializing an rt73usb network card
+Moved the extraction of the usb cached settings before starting the network
+
+ThinClientServer Version 6.3 Build 7525 - 16-04-2010
+TCOS Changelog
+Included support for Nvidia 6800, 9600M GT, 5{5,2}00, MX400 (GeF2), MX4000 (GeF4) and Micrsosoft's HyperV technology
+Fix possible crash when rebooting after logging out on some video cards
+New HyperV profile
+Further fixes to support more Intel wireless network cards
+Add default rules to support intel and via cards
+Fix caching of user settings when installed on USB pen drive
+
+ThinClientServer Version 6.3 Build 7499 - 12-04-2010
+TCS Changelog
+Fix saving of data when using backup servers
+
+TCOS Changelog
+Internal repackaging of rootdisk
+Add support for new Intel wireless drivers
+Upgraded VIA wireless driver to support  6656 chipsets
+Add support for usb device detection in Vmware View Client
+Fixes saving of SSL certificate warning on TCOS when using TUX client
+
+ThinClientServer Version 6.3 Build 7454 - 05-04-2009
+TCS Changelog
+Fix issue when multiple connections of the exact same type of connection where given to one user
+Fix issue when there is no enough disk space in the initial wizard
+Information about display testing was not being displayed
+Skipping client form checking with isDirty() function after testing display settings
+Fix issues with backup servers having a different time than the master server
+
+TCOS Changelog
+Fixes issues with moving windows on Vista, Windows 7 and 2008
+Included fix whereby ICA hardward acceleration package is available
+
+ThinClientServer Version 6.3 Build 7304 - 09-02-2009
+TCOS
+Filter out VNC VMWare view and ICA acceleration packages from clients
+with not enough storage and adjust the limits of such profiles
+accordingly
+
+ThinClientServer Version 6.3 Build 7269 - 03-02-2009
+TCOS
+Add support for WEP keys
+Restoring the farm directory from cache
+Refreshing both TCS and VDS farm views when importing settings from usb
+Fix SSL published applications not launching correctly when joined to VDS
+Fix crash when standalone version fails to join to TCS or VDS and displays an error
+Fix required reboot when changing local password when joined to both TCS and VDS
+Fix display test required when changing local password when joined to both TCS and VDS
+Fix restore of published minimized application. Revert fix for Excel issues.
+
+ThinClientServer Version 6.3 Build 7238 - 01-02-2009
+TCS
+Fixed caching problems with adding/deleting of vmware and vnc desktop components in profile form.
+Fix missing VMware and VNC Desktop Components in local users mode
+
+TCOS
+Added uptions to parse HW_ACCELERATION should the server pass a variable to start in accelerated mode
+Fix generation of app server mode (SSL) in protocols
+Fixes regarding change of VDS server port
+Limit username / password to 255 characters
+Fix "Refresh shortcuts" works in VDS mode
+Fixes issue with VMWare view not launching correctly when using the desktop CCOS icon instead of syspref to configure the connection
+Fixes in fullscreen mode issue with VMWare view which was launching in windowed mode
+Added better support for sending windows key events when using full screen and windowed mode during VMWare openview
+
+ThinClientServer Version 6.3 Build 7214 - 28-01-2009
+TCOS Changelog
+Fix in crash when launching join VDS dialog from TCOS standalone
+Added permissions when joining TCOS to a VDS
+Fix when saving settings for local user when joined to VDS
+Client settings tab is now the default when loading syspref in standalone
+Renamed ICOS to CCOS
+Updated applicationserverclient to fix excel issues Build 8.0.816
+
+ThinClientServer Version 6.3 Build 7201 - 28-01-2009
+TCS
+Backslashes improperly escaped in database setup page
+Disable graying out of checkbox in installer when installing/upgrading/repairing TCS
+Fixed bandwidth problem in VMware in desktop components
+
+TCOS
+Fix issue with syspref authentication dialog loaded in managed mode,
+Rename of icos profiles to ccos
+
+ThinClientServer Version 6.3 Build 7189 - 27-01-2009
+TCS Changelog
+Missing upgrade scripts
+Updated manual for new desktop background settings
+Disable SSLv2
+
+TCOS Changelog
+Fix permissions of local authentication file to change local password
+Update in fontconfig. Fixes issue when authenticating on some clients
+Fix VNC authentication dialog
+Fixes loading state issue when installing managed OS from TCS
+Fix in validation of the update URL when joined with VDS
+
+ThinClientServer Version 6.2 Build 7412 - 12-03-2010
+TCS Changelog
+Fix upgrade issue when switching network interface
+Disabled proxy support in Citrix published applications
+Add support for new migrating disconnected session to different TCOS
+
+TCOS Changelog
+Add support for new migrating disconnected session to different TCOS
+Fix for licensing is implemented in the client to connect to Windows 2008 Servers.
+Fix Abnornal termination of client when launching a particular app
+Fix launch of desktop Citrix connection when using CCOS
+Fix issue with VmwareView client with different host format
+
+ThinClientServer Version 6.2 Build 7375 - 01-03-2010
+TCS Changelog
+Fix upgrade issue when switching network interface
+Disabled proxy support in Citrix published applications
+
+TCOS Changelog
+Fix booting TCOS when TCS is offline
+Fix issue when Citrix hardware acceleration was enabled and disabled without rebooting TCOS
+Fix issue when only VMware view client is published on TCOS
+Fix launch of Citrix application when using CCOS connection on desktop
+Fix issue when changing SNMP community string when booting via PXE
+
+ThinClientServer Version 6.2 Build 7349 - 18-02-2010
+TCS Changelog
+Fix passing of SNMP community string to TCOS
+Added new TCSS030 code in list of errors in manual
+
+ThinClientServer Version 6.2 Build 7311 - 10-02-2010
+TCS Changelog
+Fixed problem in browser form, was throwing a javascript error when trying to save a new browser with a bookmark
+
+TCOS Changelog
+Do not discard gtk libraries if VMware View is needed for future logons Do not unmount the gtk package if vmware view client is needed
+Default to r1 package if its not defined for previous OEM profiles
+Default to blue background if no background is set for the desktop
+Cater for change in default user on TCOS from 6.2 onwards and other new tags
+Update profile IDs for CCOS for automatic updates
+Filter out VNC VMWare view and ICA acceleration packages from clients with not enough storage
+Adjust the limits of profiles with limited HD space
+Update TCOS bootsplash with 2010 copyright date
+Fixes issue with WinKey messing up states on TS when using 2X RDP published applications only
+RDP password is now a required command line parameter for Gateway mode
+Fixed RDP rendering issue after published window changes state
+Fixed RDP wrong focus on published application
+Raise the focus of a window when we right click on the task item in the taskbar
+Do not cleanup temporary protocol settings in scheduled job service
+
+ThinClientServer Version 6.2 Build 7270 - 04-02-2010
+TCS Changelog
+Fix improperly escaped backslashes in database setup page
+Disable graying out of checkbox in installer when installing/upgrading/repairing TCS
+Fixed bandwidth problem in VMware in desktop components
+Fixed caching problems with adding/deleting of vmware and vnc desktop components in profile form
+Added missing VMware and VNC Desktop Components in local users mode
+
+TCOS Changelog
+Fix authentication dialog for VNC connections
+Fixes issue with VMWare view not launching correctly when using the desktop icon instead of syspref to configure the connection
+Fixes fullscreen mode issue with VMWare view which was launching in windowed mode
+Added better support for sending windows key events when using full screen and windowed mode during VMWare openview
+Add support for users to enter WEP keys directly inside the syspref wireless dialog
+Changes in branding of CCOS in splash screen and Google now points to Google Apps
+Renamed ThinClientOS to to Cloud Client OS in bootsplash
+
+ThinClientServer Version 6.2 Build 7238 - 31-01-2010
+TCS Changelog
+Fixed caching problems with adding/deleting of vmware and vnc desktop components in profile form
+Missing VMware and VNC Desktop Components in local users mode
+
+TCOS Changelog
+Fixes issue with VMWare view not launching correctly when using the desktop CCOS icon instead of syspref to configure the connection
+Fixes fullscreen mode issue with VMWare view which was launching in windowed mode
+Added better support for sending windows key events when using full screen and windowed mode during VMWare openview
+
+
+ThinClientServer Version 6.2 Build 7189 - 27-01-2010
+TCS Changelog
+Missing upgrade scripts
+Updated manual for new desktop background settings
+Disable SSLv2
+
+TCOS Changelog
+Disable double logon on TCS
+Fix VNC authentication dialog
+
+ThinClientServer Version 6.2 Build 7157 - 26-01-2010
+TCS Changelog
+Update DHCPHelp config file in its entirety
+Always listen on localhost if we bind to a specific address anyway
+Added two new ACPI advanced options in the management console interface
+Fix passing the correct RDP experience setting for older versions of TCOS
+Added support for modifiying the SNMP community string of the TCOS
+Added support for VMware View and VNC
+Added support for Auditing of Management Console settings
+Fixed inheritance of Client Advanced options when using group settings
+Implemented faster database backup system
+Add support for changing the background colour of the TCOS
+Add support for putting custom text on the desktop of the TCOS
+
+TCOS Changelog
+Passing full domain name in RDP and Vmware View connectivity
+Updated version of SSL libraries to run on 486 and above due to compatibility issues
+Added support for Browser URL and preconfigured connections on standalone desktop
+New ICOS profile available for TCOS
+New browser pages are always open in a new tab
+Add support to use modified SNMP community string from the TCS if available
+Fixes issue with file locking when using redirected drive on RDP published applications
+
+ThinClientServer Version 6.2 Build 6998 - 23-12-2009
+TCS Changelog
+Setting default bandwidth mode to 'high' for existant rdp published sources during upgrade
+Turning on by default the require user authentication on ThinClientOS checkbox for new installations
+Fix when upgrade advanced options from default client
+Fix authentication error not being displayed when trying to connect to mysql
+Add support to re-install server when slave server was deleted from the master
+Fix when using MYSQL5 when registering a TCOS with the server
+Fix debugging clients which had a space in their name
+Added method which scrolls viewport to currently selected item
+
+TCOS Changelog
+Fixes when detecting Nvidia cards in dual model
+Fixes when using dual monitor cards on r2 models
+Add support for Nvidia 9600GT
+Add support for SIS 671
+Grab focus when prompting for reboot on TCOS
+Do not close volume, system tray and sound server if we are disconnecting
+Remove shortcut of CTRL+ALT+Mouse to move the window when dragging
+UI fixes in standalone configuration utility
+Added support for further wireless chipsets and encryption modes
+Fix offline support in login prompt
+Add support for displaying text in Persion language
+Added support for Nvidia settings in configuration Utility
+Added Alt+Win+M shortcut to minimize fullscreen RDP desktop;
+Fixed international support for command line parameters in RDP component
+
+ThinClientServer Version 6.2 Build 6887 - 10-12-2009
+TCS Changelog
+Updated manual
+Show ThinClientOS update notification on homescreen when available
+
+TCOS Changelog
+Added support for correctly testing dual mode support on newer NVidia cards on r3 profiles
+Fixes in RDP client related to MS TS licensing and choice of sound codec
+Decrease verbosity of logging from the new login manager
+Patch xkb module in the X server of r2 profiles since it was causing a crash when using German keyboards
+
+ThinClientServer Version 6.2 Build 6860 - 04-12-2009
+TCS Changelog
+Skip extra logging of calls related to redundancy in the access log
+Dual Desktop & Lock Desktop option in client form was not correctly disabled
+Added 'Terminal' option in client forms under Advance Options
+Support for inheritence in "Advanced Option" tab when managing TCOS
+Provide error messages if the external DB upgrade is not successfull during installation
+Fix when slave was removed from master, it still responded to dhcp requests
+Rotate to next server when first server in PXE mode is not available
+Added size limit of 10MB to the redundacy.log file
+Added redundacy.log and redundacy.2.log files to the debug zip file
+Fix when downloading a server when using firefox
+Fix client forms in Management Console when using the browser bundled with the ThinClientOS
+Skip doing external database upgrade calls if we are not in upgrading the installation
+Startup the DHCPHelper in whitelist mode by default when doing a fresh install
+Do not perform the uninstall procedure when repairing the installation
+Skip wizard when upgrading a slave server
+Added new update notification system for TCOS images
+Removed enable/disable redundancy logging functionality
+Fixed issues with display settings inheritance during client's first registration. Values were being always saved to client table preventing any future setting inheritance 
+Added 'custom' preferred boot server list to client forms
+Disabled redundancy support when master is running on external database
+Increase values for odbc.defaultlrl mssql.textsize and mssql.textlimit in php.ini
+Support for MSSQL in redundancy mode
+Add output of lspci to the database if possibles
+Fix schema mismatch was occuring because of wrong column order between mssql/mysql
+
+TCOS Changelog
+Removed option of VESA driver on 10Zig 562X and Terra AIO 1900
+Update progress bar of shutdown of TCOS correctly
+Added a unique identifier to each shortcut. Solves bug when two or more components have identical names
+Added support for network boot and diagnostics on all generic and compact profiles
+Fixes when setting the domain for Citrix connectivity
+Do not launch two instances of the volume control
+Fix import back settings from USB
+Disable local login in managed mode in greeter
+Including second monitor entry inside monitors.inf when a generic monitor profile is used
+Added new console messages related to display testing
+Now using bandwidth option to determine what sound quality to forward to the 2X Client (good [default], verygood or normal) when launching RDP desktops
+Support for Samsung SyncMaster TC240 client using ATI X1200 series card
+Fix how to detect whether current setup has dual and invert enabled
+Added an extra 2s delay before changing to VT7 since during fast boot ups changing VT simply was not occurring
+Add support for enabling/disabling terminal in TCOS
+Remove the VNC package on PXE when disabling VNC in TCS
+Use PDF icon in taskbar for Adobe Reader
+Always start the Citrix applications as restored and move them to coordinates 0x0 due to previous bug
+Fix passing NX port correctly instead of hardcoded to port 22
+Added support for SIS 771/671 video adapter support in generic.r3
+server.version field was not being updated correctly in DB during upgrade
+Added 'any server' option to preferred boot server field
+Approving a MAC manually failed to reload dhcp configuration
+Use esd (compatibility) sound demon on legacy profiles only. Use pulseaudio otherwise.
+Add support to check for updates for different client hardware profiles
+Do not autostart again when resetting desktop windows
+Bug detected in query_credentials re-write related to auto-reconnection
+Now using xprop to detect width and height of resolution on all profiles except legacy
+Fix for setting the correct width of the system tray utility when not using dual monitor displays
+2X client updated to 7.3.10134 fixesMS RDP session default geometry, TimeZone redirection, keyboard related issues
+
+ThinClientServer Version 6.2 Build 6620 - 20-11-2009
+TCS Changelog
+Paging for client and user reports was not working correctly
+Fixed IE flickering when clicking on a list
+
+ThinClientServer Version 6.2 Build 6595 - 18-11-2009
+TCS Changelog
+Added php error log files to server debug, and also added a size limit to the log files
+Added support for preffered boot server
+Deleted client mac address was not appearing in pending list
+Add support to upload TCOS OEM versions with a very long name
+PHP configuration fixes to pass variables no in register globals
+Add upgrade scripts which were skipped as of previous v6.1 release
+We should support all versions of TCOS in the TCS
+Fix issue when authentication in TCS was turned off
+Fix sorting by 'auto assign rules' column in client groups page caused groups to disappear
+'Client requires reboot' message was being displayed everytime even when not required
+Speed up registration of TCOS on first time by providing data directly to TCS
+Default TFTP boot options where not being preserved according to current default image
+Removed sorting from the root nodes of the sidebar
+Added checking for approve and install, if client is already in managed
+Pending list filtering was not working correctly and was very slow
+
+TCOS Changelog
+Fixes for Intel 945GL video cards with PCI ID: 8086:2562 found in Compaq Evo
+New compact profiles
+Fixes in sound (pulse-audio protocol native)
+Upgraded splash screen to show version 6.2
+Fix keyboard handling issues in RDP desktop and published applications
+
+ThinClientServer Version 6.2 Build 6533 - 11-11-2009
+TCS Changelog
+
+Improved support for redundancy
+Add support for promoting and disjoining servers from a farm
+Add optional support to force users to authenticate with TCS
+Add support for installing TCOS without requiring to first register with the TCS
+Add support to set Citrix Hardware Acceleration to TCOS that support it
+Improved logging of TCS
+Discontinued Linux version of TCS
+
+TCOS Changelog
+Added support for new video card drivers in X.org (7.4)
+Improved support of VIA, Intel, NVidia and ATI video cards
+Improved support of dual head support for VIA, Intel, NVidia and ATI chipsets
+Added support for Citrix Client 11.0 including hardware acceleration
+New Login Manager in TCOS managemed mode with support for password authentication with TCS that support it
+
+ThinClientServer Version 6.1 Build 6414 - 29-10-2009
+TCOS Changelog
+Fix issues when publishing IE8 when using RDP published applications
+
+ThinClientServer Version 6.1 Build 6408 - 29-10-2009
+TCOS Changelog
+Fix passing of proxy username and password for 2X connections that require it
+
+ThinClientServer Version 6.1 Build 6399 - 28-10-2009
+TCOS Changelog
+Added auto detection support for the VIA CN896 graphics chipset
+
+ThinClientServer Version 6.1 Build 6391 - 27-10-2009
+TCS Changelog
+Fix cleanup of sessions and correct it to 30 days
+Enable proxy support for TCOS that support it
+Added support for disabling RDP compression if supported by TCOS
+Updated the manual
+
+TCOS Changelog
+Add support for RDP compression
+Fix confugring WEP on the rt2860sta wireless card. The card still takes up to 3 minutes to get an IP in WEP but then works flawlessly.
+Upgraded RDP client to 7.3.9518, fixes BitmapCache version 2.0 which caused broken video rendering
+Add support for disconnect and reboot buttons on desktop when available
+Add support for embedded PDF viewer in browser
+Fixed support for 2X Web Portal published applications when using the browser
+
+ThinClientServer Version 6.1 Build 6236 - 07-10-2009
+TCS Changelog
+
+Added proper inheritance of multiple auto assign rules.
+Added scrollbar support to toolbar drop downs.
+Fixed ms sql schema so that the user tabel has 'username','profile_id','deleted' as unique keys. Fixed select query from ldap table, was not returning for mssql.
+Added button is sessions page to clear data older then a month.
+Fixed problem in administrator page, when clicking on an administrator's account, the name is greyed out but if New Administrator is clicked and canceled and then clicking on the previous account, the username field is enabled.
+
+TCOS Changelog
+
+Enable the proxy support for 2X RDP published applications and desktops
+Added support for XThin V16 Thin Client
+Added support for the AzureWave rt2860sta wireless card
+Added support for Terra all in one 1900 Thin Client
+Fixes with CD booting on the XThin V16 Thin Client. Should improve CD booting compatibility on other Thin Client models
+Loading USB2 drivers early when booting from CD to avoid renumeration of USB devices
+Add drivers to hardware supporting USB2
+Add support for Latin, Swiss, Danish and Portuguese system keyboard layouts as well as RDP redirected layouts
+Add support for debugging RDP traffic in RDP client
+Fix crash when browser is not available in compact profile and desktop icons are not shown properly
+Fix pointer rendering when using RDP on Windows 2008 R2
+Fix 256 colour cursors when using RDP
+Fixes in keyboard grabbing when using RDP. Should fix issues with wrong ALT+TAB and START key combination
+ThinClientServer Version 6.1 Build 6152 - 28-09-2009
+TCS Changelog
+Added support for Citrix Multimedia Acceleration. Feature requires TCOS with Citrix Client 11.0.
+
+ThinClientOS Version 6.1 Build 6135 - 25-09-2009
+TCOS Changelog 
+Added beta support for Citrix Client 11.0. Citrix acceleration is not supported when using the VIA driver.
+
+ThinClientServer Version 6.1 Build 6078 - 15-09-2009
+TCS Changelog
+Added scrollbar support for toolbar drop downs. This was an issue when users had lots of groups.
+
+ThinClientServer Version 6.1 Build 5973 - 31-08-2009
+TCOS Changelog
+Implement RDPv4 protocol. Allows remote control of an RDP session by the administrator.
+Add error message when TS could not contact licensing server
+Fix disconnect bug from RDP server due to unknown RDP packet
+Fix issue with the screensaver settings not being set correctly
+
+ThinClientServer Version 6.1 Build 5923 - 25-08-2009
+TCS Changelog
+Fixed issue with setting the correct spanning of multiple monitors when using RDP published applications
+Send correct WOL packet from the Management Console
+Added option for setting spanning options for RDP desktop and RDP published applications
+
+TCOS Changelog all models
+Added missing configuration file for full RDP desktops with screensaver option
+Fix issue with screensaver not activating correctly when locking is required when using one RDP connection
+Fix issue when using print redirecting using RDP desktops/applications with printers which contain a space in their name
+Added support to set options in network cards to boot using WOL on next boot
+Added support for booting more models of external CD-ROMs and DVD-ROMs
+Add support for Castles EZ100 smart card reader
+Fixed issues with screensaver not always being triggered at the login screen and within a published desktop
+
+ThinClientServer Version 6.1 Build 5802 - 03-08-2009
+TCS Changelog
+Give full rights to Administrators from the Management Console
+Do not allow multiple Administrators to be created with the same name in the Management Console
+
+TCOS Changelog
+Improved support for booting TCOS on VMWare Server 1.0.9 when using the VMWare OEM edition
+Fixed issue when using RDP desktop and published applications when using the XFree86 drivers
+Fixed booting issue when VGA resolution is not supported by video card during boot procedure
+Fixed rendering of text when using the RDP desktop or published applicatons
+Fixed redirection of files and sound on Windows 2008 R2 when using the RDP desktop or published applications
+Add support to thin clients which have up to 4GB of RAM
+Removed the error msg TCSS034 related to XFree86 and RDP
+Added the version information during boot up
+
+ThinClientServer Version 6.1 Build 5738 - 24-07-2009
+TCS Changelog
+Fix issue with inheritance not correctly set when using auto assigning of groups
+
+TCOS
+Lower limit of installing TCOS to disk to 128MB. If more space is required due to local applications a warning is now given.
+Add support for the Atheros (ath9k) wireless chipset
+
+ThinClientServer Version 6.1 Build 5671 - 14-07-2009
+TCS Changelog
+Fix issue with inheritance not correctly set when using auto assigning of groups
+
+TCOS
+Lower limit of installing TCOS to disk to 128MB. If more space is required due to local applications a warning is now given.
+Add support for the Atheros (ath9k) wireless chipset
+
+ThinClientServer Version 6.1 Build 5649 - 02-07-2009
+TCS Changelog
+Fix issue with corrupt key when using offline licence activation
+Fixes issue with clients in a group not inheriting the settings correctly and updating back to the default client
+
+ThinClientServer Version 6.1 Build 5625 - 26-06-2009
+TCOS Changelog
+Fixed support for multimedia keys when using RDP connections
+Fixed disconnected keyboard after screenSaver was activated
+Added alias for US keyboard with deadkeys support for 2XClient in RDP desktop and published mode
+
+ThinClientServer Version 6.1 Build 5607 - 22-06-2009
+TCOS Changelog
+Added support for spanning RDP sessions to both desktops
+Added support to limit published applications to one monitor
+Fixed wrong window rendering when window is partially offscreen
+Fixed skin window for Windows Media Player
+Fixed dektop window title being cut until first dot
+Fixed missing system tray icons
+Fixed keyboard support on systems where XKB fails - fixes arrow keys
+Fixes for RDP6 which uses 2096 bits keys
+
+ThinClientServer Version 6.1 Build 5571 - 11-06-2009
+TCOS Changelog
+Improvement on the acceleration mode bootup.  The thinclient will boot in acceleration mode even when changing monitors
+Improvement on syspref frequency listing.  Function only called if DDC is present
+Removed subvendor for 8086:100e Intel gigabit NIC card
+
+ThinClientServer Version 6.1 Build 5566 - 11-06-2009
+TCS Changelog
+Increase amount of database connections that the TCS can access
+Added support for secondary DB address in DBCred utility if available
+Sign binaries for Tftp and DBcred utilites
+Fix Group display settings not being inherited by client
+
+TCOS Changelog
+Fix booting of OS when the server is heavily loaded
+Fix text drawing in RDP client which was garbled
+Fix standalone utility not being updated with latest refresh rate values
+First boot up is performed in acceleration mode if the TC doesn't support VESA properly
+
+ThinClientServer Version 6.1 Build 5533 - 05-06-2009
+TCOS Changelog
+Fix issue with mouse pointer not showing positioned correctly when using desktops not in full screen
+
+ThinClientServer Version 6.1 Build 5526 - 29-05-2009
+TCS Changelog
+Added 'Installed Clients' section in licence details
+Fixed stalling of debuging on large installations
+Added client boot up logging
+
+TCOS Changelog
+Fixes in 2X Client
+Fix auto start for local web browser
+
+ThinClientServer Version 6.1 Build 5512 - 25-05-2009
+TCS Changelog
+Improvements in shared memory management
+Remote display testing on TCOS versions prior to 6.1 is now disabled.
+Added boot method information in client list page
+Fixed possible issue with forms after product activation
+User can now set a TCOS as default directly from the OS list page
+Improvements in server-client display testing
+Improved server IP detection during installation
+
+TCOS Changelog
+Shadowing functionality enabled after user logs off session
+Shadowing user authorisation request performed only once
+Improved server utilization and scalability
+Build-time filtered applications are not shown inside system preferences
+Local applications for Exilis TC are now disabled
+Standalone building strategy improvements
+Include Flash 9 during standalone installation from TCS
+Update both active and master servers with display parameters after server-client display testing
+Improved TUX Client state logic machine
+Fixed long text (> 255 chars) rendering
+Fixed ellipse rendering
+
+ThinClientServer Version 6.1 Build 5410 - 30-04-2009
+TCOS Changelog
+Added additional support for USB keyboards
+
+ThinClientServer Version 6.1 Build 5398 - 29-04-2009
+TCOS Changelog
+Fixes installation errors on Bosanova 600/802/U700
+Fixed sound redirection when using RDP in PXE mode
+Improved USB Recovery process
+Fixed setting of resolutions in standalone mode on slow thinclients
+
+ThinClientServer Version 6.1 Build 5381 - 24-04-2009
+TCS Changelog
+Suppressing shmop PHP warnings to prevent breakage in TCS
+ACPI radio buttons not working in IE6/IE7
+
+ThinClientServer Version 6.1 Build 5378 - 24-04-2009
+TCOS Changelog
+Fix setting of correct keyboard layout for RDP desktops
+Fix setting of IP manually when there was no DHCP or DHCP conflict
+
+ThinClientServer Version 6.1 Build 5349 - 18-04-2009
+TCS Changelog
+Do not display initial configuration assistant on Linux after upgrade
+Allow slave servers to be disjoined
+Fix issue with managed users which contain a space in the username
+Fix issue with managed users which use username@domain.com notation
+Fix rare issue of database connectivitiy with MSSQL
+Various apparmor fixes
+Fix booting v6.0 TC in PXE mode when in redundancy mode
+Fix wrong message with missing video hardware acceleration when TC is switched off abruptly
+
+TCOS Changelog
+Display correct filenames when using redirected USB media with foreign characters
+Make serial mouse support optional
+Fix upgrading of HD TCOS in standalone mode
+Fix setting of fixed IP in standalone mode
+Fix setting of RDP published desktops in full available area mode
+Improve behaviour of compact edition in low HD environments
+Remove disk caching when using the local browser
+Limit the ability to display contents while dragging a published RDP window
+Improved readability of icons from published applications in start menu
+
+ThinClientServer Version 6.1 Build 5243 - 06-04-2009
+TCS Changelog
+Fixes network detection in Ubuntu installation on certain configurations
+Fixes in Linux Ubuntu apparmor security profile
+Updated manual to the latest version
+
+TCOS Changelog
+Improved disk space checking of HD installation
+Fix issue of placement of full available area RDP desktop when TUX desktop is not available
+Improve behaviour when switching of servers in redundancy mode
+Improve behaviour when servers are unreachable
+Fix issues with caching of data in offline mode
+Fixes issue with cleanup of packages when in offline PXE mode
+
+ThinClientServer Version 6.1 Build 5220 - 03-04-2009
+TCS Changelog
+Fixes in Linux Ubuntu packaging
+Fix issue when slave was not capable of joining correctly a TCS using external MySQL 5
+Fix writing of settings during the startup configuration when TCS is using external MySQL 5
+Fix adding new TCOS when TCS is using external MySQL 5
+Remove a TCOS from the managed screen when installing in standalone mode
+Allow upgrade of 6.0 TCOS clients to 6.1 TCOS
+
+TCOS Changelog
+Cache SSL settings data of RDP published desktops and applications
+Cache Skype and PDF reader settings when possible
+Fix placement issue of RDP desktop client in full available area
+
+
+ThinClientServer Version 6.1 Build 5185 - 28-03-2009
+TCS Changelog
+New startup configuration for new TCS installations
+Support for external MSSQL & MySQL 5.x databases
+Improved backup and recovery of TCS data
+Improved performance of reporting and charting 
+Support for adding all users in AD to the TCS
+
+TCOS Changelog
+Improved boot up time of OS
+Improved support for new Gigabit network drivers and SATA controllers
+Improved support for installation on USB pen drivers
+Screensaver support
+Improved dual monitor support
+Support for testing video resolutions before applying changes
+New compact TCOS version for older thin clients with less RAM
+Support for builtin PDF reader
+Support for builtin Skype
+Support for builtin Media Player browser plugin
+New RDP client for both direct TS connections and 2X RDP desktops and applications
+Added support for Serial and Smart Card redirection for all RDP connections
+Support for filtering published applications and desktops based on type
+Support for published applications using the system tray
+Add support to Import/Export settings for the unmanaged TCOS
+Add support to create a recovery disk of the unmanaged TCOS
+
+
+ThinClientServer Version 6.0 Build 4808 - 17-02-2009
+TCS Changelog
+No changes
+
+TCOS Changelog
+Update of the latest TUX client 6.1.6903
+
+ThinClientServer Version 6.0 Build 4773 - 13-02-2009
+
+TCS Changelog
+Preventing javascript error on empty UI message
+Javascript Error was being shown when dhcp helper service was ON
+DHCP helper status message was also being returned as 'DHCP Helper off'
+Showing warning message in access control page when dhcp service cannot be pinged.
+All 'Deleted on' column values were appearing as false in deleted clients view.
+PHP errors were being output when no clients were in the returned result. (only for the clients listing pages)
+Added username column to clients screens which went missing since version 6
+In IE6 when browser window was resized to a very small size, two non fatal script errors occured.
+
+TCOS Changelog
+Wait for monitor probing to finish if no data is available
+Updated configuration of thinclients using the geode driver and forcing changing of VT if necessary
+Update of the latest TUX client 6.1.5725
+Add support for Realtek RTL8102E
+Fixed bug when setting resolutions for a TC with monitor which does not support DDC when in managed mode
+Force setting of sane 800x600 VESA driver if last entry was a failed resolution
+USB recovery and installation
+Fix issue with lilo loading on TC which does not support GRUB
+
+ThinClientServer Version 6.0 Build 4538 - 19-11-2008
+
+TCS Changelog
+Added option in client listing to select between standalone or managed when installing ThinClientOS to disk.
+Update the server table with the current IP of the TCS
+Images were not appearing if files were missing, but an entry in image table was present. Now showing 'files missing' warning.
+Moved 'remove' button under 'add' in user profile form.
+Added TCS support for auto reconnect of RDP connections
+Added license information in TCS front page.
+Improoved clients and users report loading speed especially with big data sets. Filtering has also been implemented.
+Trying to drag a client after a UI pane was resized did not work. A script error was also being generated in Firefox.
+Added missing 'Bandwidth' option in protocol form.
+Added serial ports, and auto reconnection options to protocol and published forms.
+Added 'Disabled' option in printer drop down list for client related forms.
+Filtering was sometimes resulting in a blank page
+Showing 'Vendor', 'Version' and 'Release Date' columns in ThinClientOS listing
+Form definitions were sometimes being fetched through a POST request.. causing errors on IE6  This behaviour was only noticed in the access control form
+Prevent sorting when clicking on the 'filter' icon
+Prevent error in IE when downsizing a column to the extreme
+After resizing UI panes, document.onmouseup event was being overriden causing column resizing problems in Listing
+Improoved positioning of filter icon in IE
+Sorting was not always working in IE
+Randomize every ajax GET request to prevent browser caching
+Preventing core JS scripts caching
+Server Debug was not working when having 1 or more domains
+Scrollbars in bottom pane were hidden on low resolutions, and on forms such as client or profile
+Missing SSL Support for NX and Citrix in protocol form
+
+TCOS Changelog
+Fix issue when upgrading from HD v5 to v6
+Installing to disk in both managed and standalone mode
+Add support for automatically reconnecting RDP connections
+Fix error messages for publishing of 2X applications
+Fix error messages for RDP desktops
+Fixes caching issues when logging out
+Fix display of credential checking for NX connections in managed mode
+Fix Citrix issues when using published applications in managed mode
+Add support for import and exporting of settings of a standalone client
+
+ThinClientServer Version 6.0 Build 4442 - 30-10-2008
+Enable session reloading in managed mode when loading published applications on desktop
+
+ThinClientServer Version 6.0 Build 4437 - 29-10-2008
+Revert the monitor detection scripts to the version found in TCOS 5.0
+Revert the ICA client to version 9.0
+
+ThinClientServer Version 6.0 Build 4414 - 24-10-2008
+Updated Warning Message when monitor probing is not available
+Avoid using resolutions not supported by the thin client video card
+Improve detection of monitor change
+
+ThinClientServer Version 6.0 Build 4383 - 13-10-2008
+TCS
+
+Fix loading of forms of the default client and group clients
+Fix generation of support debug zip file
+Fix shadowing (VNC) of client
+Fix issue when resizing left pane in IE
+Fix errors when loading a screen which auto refreshes
+Improvement in loading speed of client form
+Fix issue with clients displayed as offline incorrectly
+
+ThinClientOS
+
+Fixes in detection of correct native resolution of monitor
+Default to safe mode video driver when launching the thin client for the first time
+Detect monitor settings on DVI connector
+Speed up loading of desktop when delays occur to generate published applications
+Fix "Del" key when using RDP full desktop client
+
+Known issues:
+
+1680x1050 is not support in Accelerated mode
+Automatic monitor detection not available on Wortman 3550
+
+ThinClientServer Version 6.0 Build 4260 - 05-09-2008
+Mark kernel 2.4 as deprecated
+
+ThinClientServer Version 6.0 Build 4256 - 05-09-2008
+Fixed Javascript error when listing Blocked or Approved clients in Access Control
+Fixed starting of DHCPHelper server on Linux SUSE when using apparmor
+Fixed issue with video card driver support on RieCom standalone products
+Add support for Broadcom Gigabit network card found on Acer 5920G, HP NC6710b, ACER Aspire 5310, HP T5730
+Fixed issue when setting Linux 2.4 on ThinClientOS images which do not bundle that option
+Fixed rendering bug when hiding and displaying forms in Internet Explorer 6
+Updated manual to the latest version
+
+ThinClientServer Version 6.0 Build 4238 - 29-08-2008
+Ask question during upgrade procedure to backup the server using the
+management console
+Client and user report icons were incorrectly swapped.
+Fix issue with Start menu being displayed on the wrong monitor when
+launched from the Task Bar in Dual Monitor configuration
+DHCP Helper was not starting on Linux because lines were terminated
+with \r\n instead of \n
+Updated manual to Version 6
+Added manual button in homepage
+Updated profiles for RieCom products
+Creating a group did not refresh the sidebar tree nodes
+Added vesa XFree86 driver in the VMWare profile
+Modified oem targets to include xfree86 drivers in the xfree86.img package.
+Added 'auto detect' option for video card driver
+Increased licensing of TCS to new 120 days evaluation period of V6
+Escape "/" appropriately inside the Homepage URL
+Showing correct inherited value for display manager aswell as video
+card driver fields.
+Clearing clients cachedconfig when changing default settings.
+Decaching details for clients when changing default settings. Was
+causing client resolution values to appear with previous default
+settings.
+2Xthinclientserver_conf.sh on Linux was not backing the dbcred.conf
+file properly when configuring.
+Refactored some code in preinstall.sh on Linux
+Fixed clean up in Debian rules file.
+Always converting MAC addresses entered in auto-assign form to uppercase.
+Upgrading mysql schema during restoration, and giving warnings on
+database update errors and when trying to restore a backup which was
+originally taken on a newer TCS.
+Keeping backup of current schema before starting restore.
+Keep a backup of all files in current installation before doing an
+upgrade of the TCS
+Do not install all the packages from the ZIP file but only the files
+required by the standalone.
+HTTPS checkbox was always disabled in published form.
+Showing notification when a thinclientserver or thinclientos update is available
+Fix in 2X ApplicationServer client with timeout fix
+Improved thinclientos download message in image upload form.
+Removed temporary js files
+
+ThinClientServer Version 6.0 RC1 Build 4195 - 22-08-2008
+Clearing client details cache when moving in or out of groups
+Validating manually added mac addresses for approved and blocked clients
+Removed redundant kernel 2.4 entries.
+Removing isolinux filter only when building generic builds.
+Added the memtest and etherboot packages.
+Set the default timeout to 10 seconds when booting from the LiveCD
+Disabled editing of backup servers.
+Add support for configuring the VNC modes inside the TCS management interface
+When a client is associated with a group, show "Use Group Settings"..
+when it is not show "Use Default Settings"
+When in farm mode, the TCSList for the dhcphelper needs to be
+seperated by commas not spaces
+Removing problematic characters in Linux packages scripts when
+detecting services.
+Added vendor infor for generic edition
+Cleanup of uneeded images and unused V5 Javascript
+User was being redirect to correct license page EVEN if he was not
+logged in, hence generating lots of javascript errors.
+Disabling "Up One Level" button in ldap members listing
+Highlighted fields were loosing bold font when selected.
+Don't allow blank bookmarks.
+After upgrade user was being redirected to old register.php
+client "Connect" button for vnc shadowing is now always enabled
+Add GUI option to disable VNC user prompts
+Renaming of clientron and gigbayte profiles.
+Sleeping a bit more before checking if the services have started.
+Remove all apparmor profiles when un-installing the server.
+Adding/Deleting a printer was not clearing cache for client defaults
+and groups forms.
+Preventing IE from crashing after 2+ system backups are taken in a row..
+Printer was being saved, but when you went back to the form the saved
+selection was not displayed.
+This happened for client edit, group edit, and default settings edit.
+Updated binary of rdesktop with version 1.6.0
+Prevent results for Page A from being outputted on Page B
+Precaching toolbars and listings xml definitions on initialization
+Character classes where not qouted when passed to the tr command.
+Starting resolution of Vmware profile is now set to 800x600.
+Add the generic vendor logo for the virtual architectures
+Move schema update for profiles so that it runs when upgrading from
+version5 to version6
+Detect_Firewall function on TCS Linux is more resilient to errors.
+Clients were not inheriting properly from group settings.
+Added "debug clients" and "online clients" views
+Fixed NAT bug for user charts.
+Section arrows were being shown as closed, when infact the sections were open.
+Changed "assign to group" toolbar icon
+"No Image" warning was being displayed only when approving second mac
+Added 'Assign to Group' button in client listing
+Added Default port button in the connections dialog in Standalone Client
+When selecting SSL mode in a 2x application server connection the port
+defaults to 443 in Standalone Client
+Switching off error_reporting when deleting to prevent ajax errors.
+Updated the updates part with the new update now button in Standalone Client
+Since r4112 'deleted' field in deleted clients list was being
+displayed as 'false'
+Do not prefix ssl:// to an IP that already has ssl:// as its prefix
+Removed caching for all client listings.
+Solved Published Applications/Remote Desktop protocol ID collision
+Client failing to take group settings after auto assignment.
+Solved issue when changing to other page while form is being saved,
+and return to same form
+
+ThinClientServer Version 6.0 BETA6 Build 4119 - 13/08/2008
+Added "restore backup from file" functionality
+Do not display the Confirm button in Win32 install until we re-enable the checks inside the TCS Management Console
+Fixed bug with listing object causing browser to become unresponsive at 100% cpu
+After 'compressing files' disappeared, there was still processing left to be done. The user was incorrectly led to believe that the backup was finished and see it in the list.
+Another notification is now being displayed between 'compressing files' and the actual backup finalization.
+Showing message during restoration, showing prompt on completion, and redirecting to login page.
+Solved TCS on Linux issue with errors not being caught when joining slave to server.
+Fine tuning of Apparmor profiles on Ubuntu 8.04 of profiles to allow interface to function properly.
+Fine tuning of profiles on OpenSuSE 11 so that server runs without errors.
+If backup file size was 'small' (less then 1mb) 'Creating restore point' notification was not being hidden on completion.
+Management Console was failing to load some settings when client is behind NAT
+User was not being redirected to banner list, and banner list was not being decached when a uploading a new banner. (IE only)
+Client banners could not be removed.
+Added db monitor js object for clients table, which interfaces with db_monitor script.
+In use thinclientos images where being deleted.
+Preventing malformed XML being sent for client details.
+Added support for updating the IPs of all the servers in the TCS farm when installing the DHCP helper service on Win32
+Occasionally when a session expires and user is prompted with a modal password dialog (to relogin), multiple dialogs would appear on top of eachother.
+System backup progress was sometimes not being displayed, especially when having large backups (eg having 4+ ThinClientOS images)
+Fixed issues with DB_Monitor. IE was caching the result, hence causing a stackoverflow error due to recursion.
+Updated address, year of copyright and major version of the TCS
+2XAS client updated to 6.1.5605
+Change display to show that support of application server is for version 5 and above.
+Setting default resolution and colour depth for all connections.
+Add default locale settings to the generic client
+Items on desktop are not reloaded if the thinclient is about to restart.
+Fix in primary/secondary rotation code when launching 2XA client in SSL mode
+Only check and try connecting to a 2X AS backup server if a backup server is set
+Add checks for bad credentials in 2X AS client connection
+Do not display an error if no applications are available
+Add fixes to not use deprecated sound debugging option
+If the IP of the server returns an error switch to the alternate IP
+Kill the client when logging off without displaying an error message
+
+_______________________________________________________________________________________________________
+
+ThinClientServer Version 5.0 SP1 Build 3497 - 29/01/2008
+Fix missing definition for ALT+GR on Italian layouts
+Increase the limits for the PHP engine to allow a slave TCS to easily join without timeouts
+Added support for sound on AMD Geode LX platforms
+Fix bug with ThinClientOS not shutting down correctly when autologin is enabled
+Sign the installation executable on Win32
+Improved support for dual head display when available
+Updated driver from VIA with improved stability
+Fix missing sound package when using ICA/RDP published apps
+Avoid install errors on newly installed server with missing msvcr71.dll
+Fix issues with launching local browser in full screen mode
+Fix generation of desktop icons
+Fix shortcut of Windows key
+Fix autostart of applications
+Fix starting of NX from menu and desktop shortcuts
+Fix a desktop error when no published sources are available on the desktop
+Fixed missing refresh of published applications in Settings menu
+Fixed missing local browser on desktop
+Fix passing ICA password correctly for full ICA desktop
+Check if something was published on the desktop before displaying an error that nothing was published to the 2X desktop
+Fix activation of some Non Profit licences
+
+ThinClientServer Version 5.0 Release Build 3217 - 25/09/2007
+Fix updating of key when upgrading from an expired version of both an evaluation and version 4 enterprise
+Remove duplicate entries of published application server client entries
+Username of Management Console is now case-insensitive
+
+ThinClientServer Version 5.0 Beta3 Build 3185 - 11/09/2007
+Added caching engine to reduce load on the database backend
+Reduced time needed to register new ThinClient
+Pass the Domain when connecting directly to a Citrix server
+Add support for offline activation
+Fix upgrade script which refactors the ids of clients for the new redundancy features to support installations with > 100 ThinClientOS
+
+ThinClientServer Version 5.0 Beta2 Build 3148 - 23/08/2007
+Release ThinClientServer v5 for Linux
+Improved scalability of server for higher cpu/network loads
+Fixed Del key in Full screen RDP
+Added support for multiple editing of sound tab in client form
+
+ThinClientServer Version 5.0 Beta Build 3106 - 27/07/2007
+Redundancy of configuration settings
+Distribution of load on TFTP for PXE booting
+PXE booting is now 20% faster
+New licensing system
+ThinClientOS USB disk boot and installer
+ThinClientOS updated to Linux 2.6.22
+ThinClientOS fixed IP support
+ThinClientOS updated to Citrix ICA client 10.6
+ThinClientOS updated to Opera 9.22
+Sound settings can be enabled centrally
+Sound software emulation support
+Cache auto-detected information for faster future boot
+Improved support for Application Server 5
+Faster login time for Citrix users
+Added screensaver support
+Added screen locking support
+Added JetDirect print server support
+Lower memory requirements
+Improved sound support for Flash 9.0
+MetaFrameXP compatibility improved
+
+ThinClientServer Version 4.1 Release Build 2857 - 12/04/2007
+Updated hardware database to load e1000 driver for all supported chipsets
+Fixed mouse handling issues with 2X ApplicationServer client when using Excel
+Fixed update browser update notification
+
+ThinClientServer Version 4.1 Beta3 Build 2839 - 23/03/2007
+Add support for new timezone specifications and daylight savings regulations
+Add new diskseek utility to query driver for floppy presence
+Add support for improved method for handling removable media
+Add support for Agere Systems ET-131x PCI-E Gigabit Ethernet Controller
+Add new shared media structure:
+	floppy
+	cdrom
+	harddisk
+	removable media
+Fix rdesktop from flooding floppy with I/O requests before its mounted
+Fix FAT UTF8 codepage warnings
+Fix when setting the volumes of the sound mixer
+Fix the mouse acceleration to sane defaults
+Fix issues with searching
+Fix parsing of application names when they contain '&' in the name
+Fix issue with long hostnames when using 2X published applications
+Fix 'Advanced options' button when set to 'override'
+Remember sort order when switching columns
+Add configurable option to set the blanking of the display when idle
+Shadowing prompt can be forced to be skipped
+Do not display request for shadowing when shutting down
+
+ThinClientServer Version 4.1 Beta2 Build 2766 - 05/03/2007
+Added missing fixes which were mentioned in the previous changelog
+	setting of level of sound mixer
+	setting active partition in installer
+	handle multiple NTP servers
+	fix issues with local users trying to login
+
+ThinClientServer Version 4.1 Beta2 Build 2762 - 02/03/2007
+Add support for local browser with Java support when using PXE and 128MB Ram
+Add support of new Fullscreen mode option even when using the 2X Desktop
+Add support for setting a site wide default volume for the sound mixer
+Add support for accessing more types of differently formatted harddisks
+Add support for nested groups when searching for user/group matching
+Reduced the load of the reporting engine for TCS hosting large deployments
+Force version of TCOS if booting from CD to avoid unwanted automatic upgrades
+Provide obtained list of TCS as default value when unable to contact TCS
+Fix when merging of settings from both DHCP and DNS configurations
+Fix loading of sound drivers and increased verbosity when retreiving debugs
+Fixes in floppy drive support
+Fixed adding custom bookmarks for ThinClientOS browser in IE
+Fix display of last known IP of ThinClientOS
+Fixes in TCOS installer when using cfdisk
+Fix in TCOS installer when counting partitions
+Fixes when GRUB stage 1 is installed in MBR
+Fix issues with loading the eAccelerator module
+Fix display of autorization message when shadowing after the user logs in
+Fix when deleting a user which is a member from multiple connections
+Fix inheriting of autologin and shadowing credentials and from default client
+Fix when setting the keyboard model
+Fix corruption when parsing Citrix published application lists
+Fix unloading mac lists when the DHCP Helper service is disabled from console
+Fix reloading of DHCP Helper config after system backup restore
+Fix inheriting of choice of Xserver from default client except for CD boot
+Fix adding multiple NTP servers to list on ThinClientOS
+Updated manual with new parameters for options.conf and other errata
+
+ThinClientServer Version 4.1 Beta Build 2654 - 19/02/2007
+New support for low memory local web browser in the ThinClientOS
+New support for Java applets in the local web browser
+New support for Flash 7 and Flash 9 in the local web browser
+New support for offline mode redundancy in Enterprise edition
+New support for fullscreen Citrix published desktop
+New support for fullscreen 2X published desktop
+New support for Secondary IP/Hostname for full screen and published apps
+Add support for Turkish F Layout for full screen RDP
+Use up to 256MB HD/flash disk space if available to store more components
+Full screen and Published sources are now distinct to avoid user confusion
+Improved font readability on the 2X desktop
+Changed failsafe hardware detection code to detect NIC cards
+Added support for reconnection to user session if disconnected
+Added option to store packages in memory if hard disk media is full
+New ThinClientServer DNS discovery uses multiple 'thinserver' DNS A records
+New support for superfloppy formatted filesystem on USB mass storage device
+Display Shutdown instead of LogOff when AutoLogin is enabled for the thinclient
+Fix full desktop RDP without the 2X desktop
+Fix setting the volume levels of some sound cards
+Fix Numpad Enter key in the login screen
+Fix issue with usernames containing spaces and other miscellaneous characters
+Fix placement of system tray next to the clock
+Fix setting of default login screen banner
+Updated ApplicationServerClient (4.3.2083)
+Added hardware support for USB tablets
+Added hardware support for more USB mass storage devices
+Added hardware support for NetXtreme BCM5755 Gigabit Ethernet
+Improved error status messages when connecting to an AD controller
+
+ThinClientServer Version 4 Release Build 2595 - 13/02/2007
+Fix missing sessions when not using the 2X managed desktop
+Fix issues with the VIA video card driver in "Performance/X.org" mode
+Fix with UTF-8 usernames in user reporting
+
+ThinClientServer Version 4 Release Build 2497 - 23/01/2007
+Fix sound card driver issues
+
+ThinClientServer Version 4 Release Build 2485 - 19/01/2007
+Fix AGP drivers on kernel version 2.6
+
+ThinClientServer Version 4 Release Build 2379 - 29/12/2006
+Fixed slowness in Management Console
+
+ThinClientServer Version 4 Release Build 2377 - 20/12/2006
+Rebranded Beta2 to final release
+
+ThinClientServer Version 4 Beta2 Build 2371 - 14/12/2006
+
+Handle Citrix format for multiple farms
+Added support for multiple editing of client's kernel, shadowing and autologin
+Power down the ThinClient when shutting down
+Fix bugs when parsing lists of published applications
+Fix confirmation of installation when no ThinClientOS is installed
+Fix bug when there is no data in the 'all' tab of a report
+Fix to switch off ACPI related modules
+Improved logging of more utilities
+Updated autodetection scripts to include new cards
+Fix detection of SATA devices in the initial booting phase
+
+Added support for:
+	Broadcom BCM4401-B0 100Base-TX and NetXtreme BCM5752 Gigabit Ethernet PCI Express
+	Realtek 8168 - RTL8168(B) (Gigabit Ethernet with PCI interface)
+	Realtek 8101 - RTL8101(E) (Fast Ethernet with PCI-Express interface)
+	Realtek 8111 - RTL8111(B) (Fast Ethernet with PCI-Express interface)
+
+ThinClientServer Version 4 Beta Build 2324 - 27/11/2006
+
+TFTP config utility now support NX protection on Windows 2003 SP1 servers
+Fixes to allow Version 3 users to correctly upgrade to Version 4
+Debian package is now built with the correct name
+
+ThinClientServer Version 4 Beta Build 2320 - 24/11/2006
+
+Run Citrix & 2X published applications on the same desktop 
+Multiple full desktops per ThinClient 
+Support for 2X published desktops 
+Support for printer and sound redirection in 2X published applications 
+New hardware support with Linux kernel 2.6.18.2 
+New hotplugging engine support 
+Improved 2X Managed desktop look and feel 
+Improved sound support 
+ThinClient autologin support 
+ThinClient shadowing support 
+New User Usage reporting tool 
+New Client Usage reporting tool 
+New ThinClientOS diagnostic tools 
+Automatic update notification
+
+ThinClientServer Version 3 SP3 - Build 2062 - 12/09/2006
+
+Added support for Opera in the Management Console
+Fixed bug when authenticating against an AD with status "referral"
+Added support for Windows keys on ABNT2 keybords
+Fixed parsing of illegal characters inside OUs during authentication
+Fixed parsing of published applications for very large lists
+Added Xorg Matrox MGA driver with HAL support
+Added new Intel video cards:
+  82915G/GV/910GL Express Chipset Family Graphics Controller
+  E7221 Integrated Graphics Controller
+  Mobile 915GM/GMS/910GML Express Graphics Controller
+  945G/GZ Express Integrated Graphics Controller
+  82915G Express Chipset Family Graphics Controller
+  Mobile 915GM/GMS/910GML Express Graphics Controller
+  945GM/GMS/940GML Express Integrated Graphics Controller
+More fixes for Dual-Head VGA support.
+- getconfig change to receive 2 new options:
+  * FORCE_SINGLE_VGA - treat dual-head card as single
+  * FORCE_REVERSED_VGA - forces reversed configuration
+Fix updating of time via NTP server
+Fix passing of very long usernames in full screen RDP to support long FQDN
+Fix escaping of unsupported characters when redirecting printers in full screen RDP
+Fix usage of $ inside username and password
+Fixed Portuguese (Brazil) keyboard layout support
+Fix issue when populating the 2X Managed desktop with usernames with spaces
+
+ThinClientServer Version 3 SP2 - Build 1842 - 03/07/2006
+
+ThinClientServer is now free under the PXES edition
+Added support for more Cirrus based video adapaters
+Fix sound volume on some sound cards
+Fix synchronization of NumLock in full desktop RDP mode
+Fix setting of hostname when forced inside ThinClientServer
+Fix launching of some Citrix published applications from the desktop
+Fix issue with some one letter hostnames when using the Citrix published applications
+Fix setting correct keyboard layout on a Citrix published application
+
+ThinClientServer Version 3 SP1 - Build 1741 - 01/06/2006
+
+New Application Server Client build with support for international keyboards and speed improvements
+Improved support for dual monitor thin clients
+Fixed bug when changing Xserver which caused TCUP008
+Improved parsing of Citrix published applications
+Improved clickability of desktop icons
+Fixed keyboard handling in Citrix published desktops
+Handle published applications from multipled 2X Application Servers
+Optimized inclusion of standard vesa modes
+Fixed backup tool
+Fixed authentication in user@domain format
+Fixed NX support when using Xorg
+
+ThinClientServer Version 3 Release - Build 1677 - 17/05/2006
+
+Added support for 2X Application Server 3.5
+Added debugging page under the support node facilitate communication with the support centre
+Fix issues related to hard disk installations failing with TCSP008
+Fixed issue with login screen being restarted after attempting to login
+Fixed issue with too many boot parameters being passed to the ThinClientOS on bootup
+Increased timeout in CD booting from 15 to 25 seconds
+
+ThinClientServer Version 3 Beta2 - Build 1611 - 03/05/2006
+
+Fixed support for installation issues on non-English ThinClientServer
+Fixed bug with nagging Licensing page
+Improved the logic to configure the 2X DHCP Helper service
+Improved Linux installer and configuration
+Improve boot up logic when no ThinClientServer could be found
+Added support for Belgian French keyboard layout
+Improved support for text filters in Management Console
+Improved timeout mechanism in Management Console
+Added via driver for manual display driver override
+Fixed issues related to Internet Explorer v6.0.2800.1106.xpsp1
+Fixed erratic slider when setting a manual resolution which appeared  Firefox 1.5
+Added VIA KT400 auto-detection support
+Improved Active Directory debugging
+Various minor bug fixes in the Management Console
+
+ThinClientServer Version 3 Beta1 - Build 1497 - 28/03/2006
+
+Citrix Published Applications
+Citrix Published Desktops
+DHCP Helper
+Support for home users with no DHCP server or DNS server
+Support for new generation video cards
+Network installer
+Faster bootup time
+Add support for configurable timeout in Management Console
+Improving floppy probing
+Reduced size of transfer via TFTP
+Multiple edit of ThinClient settings
+Boot parameters can be detected for HD installations also (was PXE only)
+Improved support for dual monitor configurations
+Improved handling support of multiple ThinClientServers for load balancing
+Improved compatibility with DMA on some CDROMs
+Support for automatic updating of time via NTP
+Fixed automatic setting of sound levels when doing sound redirection
+VGA driver and mouse settings can now be preset per ThinClientOS
+A default hostname prefix can be assigned for a discovered ThinClientOS
+New configuration utility to store successful detection of video card drivers on next bootup
+Clients settings can be edited one after the other directly
+System restore of all settings and files of ThinClientServer for backup
+Improved support for foreign languages
+Added a bundled TFTP server on TCS for Linux
+Improved monitor detection
+New filter facility in Management Console in every screen
+Add support for RDP 4
+Removed bottleneck of concurrent accesses to TCS
+Added new support for new VIA and S3 chipsets
+Fixed escaping of symbols in account names
+Bigger jobs can be spooled on ThinClients with low memory footprint
+Fixed RDP support for: Swedish, Swiss French, Swiss German, Estonian, Slovenian, Hebrew
